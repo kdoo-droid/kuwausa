@@ -7,7 +7,7 @@
  * All shop CTAs will link to it; if blank they fall back to #products.
  */
 const CONFIG = {
-  shopUrl:      '', // e.g. 'https://shop.kuwanosato.com'
+  shopUrl:      '', // e.g. 'https://kuwausa.com' — when set, nav Shop button links here
   formspreeId:  'xbdzpave',
 };
 
@@ -107,8 +107,8 @@ function setupActiveNavLink() {
       if (match) match.classList.add('active');
     });
   }, {
-    threshold:  0.35,
-    rootMargin: `-${72}px 0px 0px 0px`,
+    threshold:  0,
+    rootMargin: `-72px 0px -55% 0px`,
   });
 
   sections.forEach(s => obs.observe(s));
