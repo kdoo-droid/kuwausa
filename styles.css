@@ -977,6 +977,39 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 16px); }
 }
 .quality-image-wrap:hover .quality-img { transform: scale(1.03); }
 
+/* Heritage stats strip */
+.quality-stats {
+  display:        grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:            16px;
+  margin:         28px 0 24px;
+  padding:        20px 24px;
+  background:     rgba(21,75,53,0.04);
+  border-radius:  12px;
+  border:         1px solid rgba(21,75,53,0.1);
+}
+.quality-stat {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  text-align:     center;
+  gap:            4px;
+}
+.quality-stat-num {
+  font-family:    var(--font-serif);
+  font-size:      1.45rem;
+  font-weight:    600;
+  color:          var(--green-deep);
+  line-height:    1;
+}
+.quality-stat-label {
+  font-size:      0.7rem;
+  font-weight:    600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          var(--charcoal-soft);
+}
+
 /* Checklist replacing pill badges */
 .quality-checklist {
   list-style: none;
@@ -1411,6 +1444,9 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 16px); }
   .source-cards  { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 
   .quality-inner { grid-template-columns: 1fr; gap: 40px; }
+  .quality-stats { grid-template-columns: 1fr; gap: 12px; padding: 16px 20px; }
+  .quality-stat  { flex-direction: row; justify-content: space-between; align-items: center; text-align: left; }
+  .quality-stat-num { font-size: 1.2rem; }
   .quality-award { flex-direction: column; text-align: center; }
   .quality-award-img { width: 90px; height: 146px; margin: 0 auto; }
 
