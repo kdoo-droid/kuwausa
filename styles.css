@@ -834,6 +834,47 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 16px); }
   color:       var(--charcoal-soft);
 }
 
+/* Trust strip above product grid */
+.products-trust-strip {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+  gap:             8px 24px;
+  padding:         14px 20px;
+  margin:          32px 0 40px;
+  background:      rgba(21,75,53,0.05);
+  border-radius:   10px;
+  border:          1px solid rgba(21,75,53,0.1);
+}
+.pts-item {
+  font-size:      0.7rem;
+  font-weight:    700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          var(--charcoal-soft);
+}
+
+/* Featured product card (capsules) */
+.product-card--featured {
+  border:        2px solid rgba(21,75,53,0.2);
+  background:    #fff;
+  position:      relative;
+}
+.product-card--featured::before {
+  content:       'Supplement';
+  position:      absolute;
+  top:           14px;
+  left:          14px;
+  background:    var(--green-deep);
+  color:         var(--cream-warm);
+  font-size:     0.6rem;
+  font-weight:   700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  padding:       3px 9px;
+  border-radius: 20px;
+}
+
 /* Product flat lay feature banner */
 .products-flatlay {
   border-radius: var(--radius-card);
@@ -1337,6 +1378,13 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 16px); }
   color:       rgba(246,241,231,0.55);
   max-width:   36ch;
   margin-bottom: 20px;
+}
+
+.footer-social-coming {
+  font-size:      0.72rem;
+  color:          rgba(246,241,231,0.3);
+  letter-spacing: 0.06em;
+  margin-top:     4px;
 }
 
 .footer-social {
